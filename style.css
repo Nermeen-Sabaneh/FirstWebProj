@@ -1,0 +1,72 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    background: url(la.png);
+    background-size: cover;
+    height: 150vh;
+}
+
+.navbar {
+    height: 55px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    padding: 10px 100px;
+}
+
+.navbar ul {
+    float: right;
+    margin-right: 30px;
+}
+
+
+    .navbar ul li {
+        list-style: none;
+        margin: 0 8px;
+        display: inline-block;
+        line-height: 55px;
+    }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-family: "Sansita Swashed", cursive;
+            padding: 8px 15px 8px 15px;
+            margin: 0px 10px;
+            transition: 0.3s;
+        }
+
+
+            .navbar ul li a.active,
+            .navbar ul li a:hover {
+                background: rgba(255, 255, 255, 0.32);
+                border-radius: 5px;
+                margin: 0px 0px 0px 10px;
+                color: rgb(255, 180, 84);
+            }
+
+            .navbar ul li a i.fa {
+                padding: 0px 3px;
+            }
+
+    .navbar ul ul {
+        position: absolute;
+        display: none;
+        top: 60px;
+    }
+
+    .navbar ul li:hover > ul {
+        display: block;
+    }
